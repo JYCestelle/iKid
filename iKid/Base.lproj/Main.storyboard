@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What did the green grape say to the purple grape?🍇" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtH-1A-9rS">
-                                <rect key="frame" x="85" y="343.66666666666669" width="205" height="86"/>
+                                <rect key="frame" x="85" y="372.33333333333331" width="205" height="28.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -60,21 +60,39 @@
             </objects>
             <point key="canvasLocation" x="823.125" y="-480"/>
         </scene>
-        <!--Item-->
+        <!--Picture-->
         <scene sceneID="ceW-mH-0kw">
             <objects>
-                <viewController id="iq5-sC-2TU" sceneMemberID="viewController">
+                <viewController title="Picture" id="iq5-sC-2TU" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7jz-Gj-L4J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Funny-Pics.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qG1-K9-nE7">
+                                <rect key="frame" x="-19.666666666666657" y="162.66666666666663" width="414.33333333333326" height="487"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="487" id="AGo-my-Yz1"/>
+                                    <constraint firstAttribute="width" constant="414" id="tqb-X6-Vn5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qG1-K9-nE7" firstAttribute="trailing" secondItem="3hf-zi-5x8" secondAttribute="trailing" priority="750" id="2ng-J0-bZe"/>
+                            <constraint firstItem="qG1-K9-nE7" firstAttribute="centerX" secondItem="7jz-Gj-L4J" secondAttribute="centerX" id="IlF-kL-65b"/>
+                            <constraint firstItem="qG1-K9-nE7" firstAttribute="leading" secondItem="3hf-zi-5x8" secondAttribute="leading" priority="750" id="J92-6U-XET"/>
+                            <constraint firstItem="qG1-K9-nE7" firstAttribute="trailing" secondItem="3hf-zi-5x8" secondAttribute="trailing" priority="750" id="MD8-kK-lVd"/>
+                            <constraint firstItem="qG1-K9-nE7" firstAttribute="centerY" secondItem="7jz-Gj-L4J" secondAttribute="centerY" id="mHQ-45-qW5"/>
+                            <constraint firstItem="qG1-K9-nE7" firstAttribute="leading" secondItem="3hf-zi-5x8" secondAttribute="leading" priority="750" id="xvV-48-uaJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3hf-zi-5x8"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="fby-62-H2R"/>
+                    <tabBarItem key="tabBarItem" title="Picture Joke" id="fby-62-H2R"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n2e-XU-bmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="105" y="735"/>
+            <point key="canvasLocation" x="104.34782608695653" y="733.69565217391312"/>
         </scene>
         <!--Pun-->
         <scene sceneID="wg7-f3-ORb">
@@ -92,7 +110,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When she gets naked in the bathroom," textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfM-un-cMm">
-                                <rect key="frame" x="75" y="358" width="225" height="57.333333333333314"/>
+                                <rect key="frame" x="75" y="372.33333333333331" width="225" height="28.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -141,7 +159,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you hear about the kidnapping at school?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2g-Tc-C02">
-                                <rect key="frame" x="85" y="344" width="205" height="86"/>
+                                <rect key="frame" x="85" y="372.33333333333331" width="205" height="28.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -184,7 +202,6 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" itemPositioning="centered" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedImageTintColor" red="0.15866136710000001" green="0.5760135878" blue="0.71866904149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
@@ -200,6 +217,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Funny-Pics.jpg" width="444" height="600"/>
         <image name="first" width="30" height="30"/>
     </resources>
 </document>
